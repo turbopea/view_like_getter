@@ -11,6 +11,6 @@
     Current status: 85% from 150000
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### SETTING UP THE WHOLE PROGRAM. STEP BY STEP.
-
+## SETTING UP THE WHOLE PROGRAM. STEP BY STEP.
+Check SETUP.md
   
