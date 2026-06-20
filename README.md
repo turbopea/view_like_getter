@@ -93,9 +93,10 @@ Add .env to your .gitignore:
 
 gitignore.env
 
-Step 4 — Run
+### Step 4 — Run
 
-pip install -r requirements.txt npm start # or: python main.py
+pip install -r requirements.txt
+python main.py
 
 About the Page token (why two calls?)
 
@@ -109,5 +110,5 @@ To check a token: paste it at https://developers.facebook.com/tools/debug/access
 
 Security
 
-Treat tokens like passwords. Never push real tokens or your App Secret to GitHub. If a token was ever committed, regenerate it — it stays in git history. Tokens stop working if permissions are revoked or the account password changes.
+**Treat tokens like passwords. Never push real tokens or your App Secret to GitHub. If a token was ever committed, regenerate it — it stays in git history. Tokens stop working if permissions are revoked or the account password changes.**
   
