@@ -18,35 +18,32 @@ Fetches data from Facebook Pages, Instagram Business accounts, and YouTube chann
 
 This guide explains how to get the credentials (tokens and IDs) the app needs.
 
-Note: Facebook and Google change their dashboards often. If a button name has moved, look for the closest equivalent.
-
-What you'll need
+What you'll need:
 
 A Meta Developer account — https://developers.facebook.com A Facebook Page you manage An Instagram Business account linked to that Page (for Instagram data) A Google account for Google Cloud Console — https://console.cloud.google.com
 
-Step 1 — Facebook & Instagram
-
-Both use the same Meta app, so you set this up once.
-
-Create the app
+### Step 1 — Facebook & Instagram
 
 Go to https://developers.facebook.com/apps → Create App. Pick a Business type app, name it, and create it. On the dashboard, add the Instagram Graph API product (and Facebook Login).
 
 Get a user token
 
-Open the Graph API Explorer: https://developers.facebook.com/tools/explorer Top right: select your app. Click Generate Access Token and approve. Add these permissions when asked:
+Open the Graph API Explorer: https://developers.facebook.com/tools/explorer Top right: select your app. Click Generate Access Token. Add these permissions when asked:
 
-pages_show_list pages_read_engagement instagram_basic instagram_manage_insights
+**pages_show_list pages_read_engagement instagram_basic instagram_manage_insights**
 
-This token only lasts ~2 hours — that's fine, you'll upgrade it next.
+This token only lasts ~2 hours, it is possible to create long term use token. Later in process.
 
 Make the token permanent (2 calls)
 
 Call 1 — turn the short token into a 60-day token:
 
-https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=APP_ID&client_secret=APP_SECRET&fb_exchange_token=SHORT_TOKEN
+https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=1235796922101110&client_secret=APP_SECRET&fb_exchange_token=FB_ACCESS_TOKEN
 
-(Find APP_ID and APP_SECRET under Settings → Basic on your app dashboard.)
+(Find APP_ID and APP_SECRET under Settings → Basic on your app dashboard.
+FB_ACCESS_TOKEN - go to https://developers.facebook.com/tools/explorer/
+<img width="1274" height="43" alt="Screenshot 2026-06-20 at 11 14 50" src="https://github.com/user-attachments/assets/0b5eb772-1e50-4f20-b80b-86d281ac57b0" />
+
 
 Call 2 — use that new token to get your Page token and IDs:
 
