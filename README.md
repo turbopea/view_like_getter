@@ -36,11 +36,13 @@ This token only lasts ~2 hours, it is possible to create long term use token. La
 
 Make the token permanent (2 calls)
 
-Call 1 — turn the short token into a 60-day token:
+**turn the short token into a 60-day token:**
 
-https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=1235796922101110&client_secret=APP_SECRET&fb_exchange_token=FB_ACCESS_TOKEN
+https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=**APP_ID**&client_secret=**APP_SECRET**&fb_exchange_token=**FB_ACCESS_TOKEN**
+**APP_ID and APP_SECRET how to get**
+1. https://developers.facebook.com/apps/
+2. <img width="388" height="184" alt="Screenshot 2026-06-20 at 11 24 09" src="https://github.com/user-attachments/assets/e4a9b3de-1477-4484-8c00-b6dadf4d9f99" /> **CLICK ON APP NAME**
 
-(Find APP_ID and APP_SECRET under Settings → Basic on your app dashboard.
 FB_ACCESS_TOKEN - go to https://developers.facebook.com/tools/explorer/
 <img width="1274" height="43" alt="Screenshot 2026-06-20 at 11 14 50" src="https://github.com/user-attachments/assets/0b5eb772-1e50-4f20-b80b-86d281ac57b0" />
 
