@@ -38,13 +38,27 @@ Make the token permanent (2 calls)
 
 **turn the short token into a 60-day token:**
 
+
 https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=**APP_ID**&client_secret=**APP_SECRET**&fb_exchange_token=**FB_ACCESS_TOKEN**
+***RECOMMENDED TO PUT ALL THOSE IDS, SECRETS and FB_ACCESS_TOKEN in seperate notes for easy access.***
 **APP_ID and APP_SECRET how to get**
 1. https://developers.facebook.com/apps/
 2. <img width="388" height="184" alt="Screenshot 2026-06-20 at 11 24 09" src="https://github.com/user-attachments/assets/e4a9b3de-1477-4484-8c00-b6dadf4d9f99" /> **CLICK ON APP NAME**
+3. <img width="297" height="130" alt="Screenshot 2026-06-20 at 11 06 46" src="https://github.com/user-attachments/assets/c977a3f4-318e-489d-b57d-27356e5ab4ec" />
+4. <img width="1274" height="91" alt="Screenshot 2026-06-20 at 11 06 58" src="https://github.com/user-attachments/assets/7cfb12b5-7267-476e-8c00-c4924660c982" />
 
-FB_ACCESS_TOKEN - go to https://developers.facebook.com/tools/explorer/
-<img width="1274" height="43" alt="Screenshot 2026-06-20 at 11 14 50" src="https://github.com/user-attachments/assets/0b5eb772-1e50-4f20-b80b-86d281ac57b0" />
+HERE YOU GO, APP_ID and APP_SECRET. Let's move forward.
+
+**FB_ACCESS_TOKEN how to get**
+1. go to https://developers.facebook.com/tools/explorer/
+2. Make sure, you have generated ACCESS TOKEN.
+3. Type like this in graph api url field, press SUBMIT.
+   <img width="1274" height="43" alt="Screenshot 2026-06-20 at 11 14 50" src="https://github.com/user-attachments/assets/0b5eb772-1e50-4f20-b80b-86d281ac57b0" />
+4. It should print like this. Copy the long **access_token** 
+   <img width="506" height="208" alt="Screenshot 2026-06-20 at 11 32 12" src="https://github.com/user-attachments/assets/322977a1-73ff-45d8-af7a-dbc418604491" />
+
+Now you can build the link, input those things you have acquired here:
+https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=**APP_ID**&client_secret=**APP_SECRET**&fb_exchange_token=**FB_ACCESS_TOKEN**
 
 
 Call 2 — use that new token to get your Page token and IDs:
