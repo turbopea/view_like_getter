@@ -83,11 +83,21 @@ Go to https://console.cloud.google.com → create a project. APIs & Services →
 
 Put everything in a .env file. Never commit real values to GitHub.
 
-env# Facebook / Instagram FB_APP_ID/FB_APP_SECRET/FB_PAGE_ID/FB_PAGE_ACCESS_TOKEN/IG_BUSINESS_ID=
+***Facebook / Instagram:***
+**FB_APP_ID**
 
-YouTube
+**FB_APP_SECRET**
 
-YT_API_KEY= YT_CHANNEL_ID=
+**FB_PAGE_ID**
+
+**FB_PAGE_ACCESS_TOKEN**
+
+**IG_BUSINESS_ID=**
+
+***YouTube***
+
+**YT_API_KEY**
+**YT_CHANNEL_ID**
 
 Add .env to your .gitignore:
 
