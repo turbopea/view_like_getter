@@ -39,7 +39,7 @@ Make the token permanent (2 calls)
 **turn the short token into a 60-day token:**
 
 
-https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=**APP_ID**&client_secret=**APP_SECRET**&fb_exchange_token=**FB_ACCESS_TOKEN**
+https://graph.facebook.com/v25.0/oauth/access_token?grant_type=fb_exchange_token&client_id=APP_ID**&client_secret=APP_SECRET&fb_exchange_token=**FB_ACCESS_TOKEN
 ***RECOMMENDED TO PUT ALL THOSE IDS, SECRETS and FB_ACCESS_TOKEN in seperate notes for easy access.***
 **APP_ID and APP_SECRET how to get**
 1. https://developers.facebook.com/apps/
@@ -73,17 +73,17 @@ Get your Instagram Business ID
 
 https://graph.facebook.com/v25.0/PAGE_ID?fields=instagram_business_account&access_token=PAGE_TOKEN
 
-The instagram_business_account.id is your Instagram Business ID.
 
-Step 2 — YouTube
+
+### STEP 2 — YouTube
 
 Go to https://console.cloud.google.com → create a project. APIs & Services → Library → search YouTube Data API v3 → Enable. APIs & Services → Credentials → Create Credentials → API key. Copy it. Note the Channel ID of the channel you want (in YouTube channel settings).
 
-Step 3 — Configuration
+### Step 3 — Configuration
 
 Put everything in a .env file. Never commit real values to GitHub.
 
-env# Facebook / Instagram FB_APP_ID= FB_APP_SECRET= FB_PAGE_ID= FB_PAGE_ACCESS_TOKEN= IG_BUSINESS_ID=
+env# Facebook / Instagram FB_APP_ID/FB_APP_SECRET/FB_PAGE_ID/FB_PAGE_ACCESS_TOKEN/IG_BUSINESS_ID=
 
 YouTube
 
@@ -95,7 +95,7 @@ gitignore.env
 
 Step 4 — Run
 
-bashnpm install # or: pip install -r requirements.txt npm start # or: python main.py
+pip install -r requirements.txt npm start # or: python main.py
 
 About the Page token (why two calls?)
 
