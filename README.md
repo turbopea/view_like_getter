@@ -96,6 +96,7 @@ gitignore.env
 ### Step 4 — Run
 
 pip install -r requirements.txt
+
 python main.py
 
 About the Page token (why two calls?)
